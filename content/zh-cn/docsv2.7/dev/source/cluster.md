@@ -126,7 +126,7 @@ public class FailoverClusterInvoker<T> extends AbstractClusterInvoker<T> {
     // 省略部分代码
 
     @Override
-    public Result doInvoke(Invocation invocation, final List<Invoker<T>> invokers, LoadBalance loadbalance) throws RpcException {
+    public Result doInvoke(Invocation invocation, final List<Invoker<T>> invokers, LoadBalance loadbalance) throws RpcException {1
         List<Invoker<T>> copyinvokers = invokers;
         checkInvokers(copyinvokers, invocation);
         // 获取重试次数
